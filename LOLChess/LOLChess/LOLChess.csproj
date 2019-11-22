@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{919DEE11-FF18-4EF5-AA82-40A1CC6E345C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOLChess</RootNamespace>
+    <AssemblyName>LOLChess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Champion.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Malzahar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maokai.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasterYi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nami.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nasus.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nautilus.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neeko.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noctume.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Olaf.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ornn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qiyana.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RekSai.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Renekton.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Singed.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sion.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sivir.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skarner.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soraka.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Syndra.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taliyah.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taric.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thresh.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitch.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Varus.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vayne.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Veigar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vladimir.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Voibear.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warwick.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yasuo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yorick.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zed.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zindred.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zyra.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ashe.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atrox.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Azir.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brand.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Braum.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diana.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dr.Mundo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ezreal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ivern.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Janna.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jax.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khazix.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KogMaw.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeBlanc.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lux.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Malphite.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redemption.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepeatingCrossbow.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunaanHurricane.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeraphEmbrace.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpearofShojin.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatikkShiv.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwordBreaker.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TalismanofLight.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThiefGloves.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thornmail.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TitanicHydra.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrapClaw.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WardenMail.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarmogArmor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YoumuuGhostblade.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZekeHerald.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zephyr.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BerserkerAxe.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BladeoftheRuinedKing.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bloodethirster.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deathblade.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DragonClaw.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForceofNature.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrozenHeart.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrozenMallet.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GiantSlayer.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuardianAngel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuinsooRageblade.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HandofJustice.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HextechGunblade.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hush.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IcebornGauntlet.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfernoCinder.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfinityEdge.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IonicSpark.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JeweledGauntlet.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocketoftheIronSolari.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LudenEcho.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MageCap.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morellonomicon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhantomDancer.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quicksilver.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RabadonDeathcap.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RapidFirecannon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedBuff.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
